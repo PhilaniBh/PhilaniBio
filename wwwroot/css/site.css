@@ -1,0 +1,249 @@
+
+
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #839496;
+    margin-bottom: 60px;
+}
+
+
+.navbar {
+    background-color: lightgray;
+    height: 50px;
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar-brand, .nav-link {
+    color: #000000 !important;
+    margin-left: -8%;
+}
+
+    .nav-link:hover {
+        color: #FFFFFF !important;
+    }
+
+.footer {
+    background-color: lightgray;
+    height: 45px;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center
+}
+
+    /*.footer a {
+        color: #d1d1d1;
+    }
+*/
+  /* .footer a:hover {
+            color: #fff;
+   }*/
+
+
+.jumbotron {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+    .jumbotron h1 {
+        font-size: 50px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+.product-card {
+    margin-bottom: 20px;
+}
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-card .card-body {
+        text-align: center;
+    }
+
+    .product-card .card-title {
+        font-size: 20px;
+    }
+
+    .product-card .card-text {
+        font-size: 16px;
+    }
+
+.navbar-brand img {
+    height: 50px;
+    margin-right: 5px;
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto !important;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #002b36;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.profile-pic img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.hero-conten h1 {
+    margin: 10px 0 5px;
+    font-size: 25px; /* Adjusted font size */
+    font-weight: bold; /* Optional: make the text bold */
+    color: #FFFFFF;
+}
+
+.hero-conten h2 {
+    margin: 5px 0;
+    font-size: 20px; /* Adjusted font size */
+    color: #FFFFFF;
+    font-weight: normal; /* Optional: make the text normal weight */
+}
+
+.hero-conten p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #FFFFFF;
+}
+
+.ratings i {
+    color: #FFD700;
+}
+
+.slider button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.contact-section {
+    background-color: #002b36;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: -48px;
+}
+
+.contact-me {
+    background: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    form input, form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form button {
+        background: #FFD700;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+    .info-item i {
+        font-size: 24px;
+        color: #FFD700;
+    }
+
+.hero-content p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #000; /* Change text color to black */
+}
+
+.hero-content h1 {
+    margin: 10px 0 5px;
+    font-size: 30px; /* Adjusted font size */
+    font-weight: bold; /* Optional: make the text bold */
+    color: #000; /* Change text color to black */
+}
+
+.hero-content h2 {
+    margin: 5px 0;
+    font-size: 20px; /* Adjusted font size */
+    font-weight: normal; /* Optional: make the text normal weight */
+    color: #000; /* Change text color to black */
+}

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - PhilaniBiography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section id="home" class="hero-section">
+        <div class="hero-conte">
+            <div class="profile-pic">            
+                <img class="profile-img" src="~/img/profile.png" alt="John Deo" />
+            </div>
+            <h1>Deelenta Pillay</h1>
+            <h2>Developer</h2>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Deserunt Totam Eveniet Explicabo Sit Consequuntur Veniam Esse Assumenda Rem At Officia.</p>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+           @*  <div class="slider">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div> *@
+        </div>
+    </section>
+ 
+  
+    <section id="contact" class="contact-section">
+        <button class="contact-me">Contact Me</button>
+        <h2>Get In Touch With Me</h2>
+
+        <form asp-action="Submit" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="phone" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+
+        </form>
+        <div class="contact-info">
+            <div class="info-ite">
+                <i class="fas fa-phone"></i>
+                <p>My Number</p>
+                <p>064 090 7221</p>
+                <p>111-222-3333</p>
+            </div>
+            <div class="info-ite">
+                <i class="fas fa-envelope"></i>
+                <p>My Email</p>
+                <p>philaniprnc@gmail.com</p>
+                <p>info@gmail.com</p>
+            </div>
+            <div class="info-ite">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>My Address</p>
+                <p>189 Prince Street, San Francisco </p>
+                <p>Durban - 4000  </p>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    .info-ite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .info-ite i {
+            font-size: 24px;
+           
+      
+        }
+
+    .info-ite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .contact-section h2 {
+        color: white;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .contact-info p  {
+        color: white;
+    }
+
+    .contact-info i{
+        color: #FFD700;
+    }
+
+    .hero-conte h1 {
+        margin: 10px 0 5px;
+        font-size: 25px; /* Adjusted font size */
+        font-weight: bold; /* Optional: make the text bold */
+        color: #FFFFFF;
+    }
+
+    .hero-conte h2 {
+        margin: 5px 0;
+        font-size: 20px; /* Adjusted font size */
+        color: #FFFFFF;
+        font-weight: normal; /* Optional: make the text normal weight */
+    }
+
+    .hero-conten p {
+        max-width: 600px;
+        margin: 20px auto;
+        color: #FFFFFF;
+    }
+
+
+</style>
