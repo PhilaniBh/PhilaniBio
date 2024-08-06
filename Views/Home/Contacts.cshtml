@@ -6,32 +6,30 @@
     <title>Portfolio - PhilaniBiography</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <section id="home" class="hero-section">
+
+    <div class="Screenshot" style="margin-left:-1%">
+        <img class="Screenshot-img" src="~/img/profile.png" alt="" />
+    </div>
+
+    <section id="home" class="hero-sectio"style="margin-top:-14%">
         <div class="hero-conte">
-            <div class="profile-pic">            
-                <img class="profile-img" src="~/img/profile.png" alt="John Deo" />
-            </div>
             <h1>Deelenta Pillay</h1>
             <h2>Developer</h2>
             <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Deserunt Totam Eveniet Explicabo Sit Consequuntur Veniam Esse Assumenda Rem At Officia.</p>
-            <div class="ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
+
            @*  <div class="slider">
-                <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="next"><i class="fas fa-chevron-right"></i></button>
+                <button class="prev"><i class="fas fa-chevron-left" style="color: orange;"></i></button>
+                <button class="next"><i class="fas fa-chevron-right" style="color: orange;"></i></button>
             </div> *@
+
         </div>
     </section>
- 
-  
+
     <section id="contact" class="contact-section">
         <button class="contact-me">Contact Me</button>
         <h2>Get In Touch With Me</h2>
@@ -42,8 +40,8 @@
             <input type="phone" name="phone" placeholder="Phone Number" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-
         </form>
+
         <div class="contact-info">
             <div class="info-ite">
                 <i class="fas fa-phone"></i>
@@ -62,24 +60,56 @@
                 <p>My Address</p>
                 <p>189 Prince Street, San Francisco </p>
                 <p>Durban - 4000  </p>
-                
             </div>
         </div>
     </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var emailSent = '@ViewBag.EmailSent';
+            if (emailSent === 'True') {
+                Swal.fire({
+
+                    title: 'Success',
+                    text: 'Your email has been sent successfully!',
+                    customClass: {
+                        popup: 'custom-swal'
+                    }
+                });
+            } else if (emailSent === 'False') {
+                Swal.fire({
+
+                    title: 'Error',
+                    text: 'There was a problem sending your email. Please try again later.',
+                    customClass: {
+                        popup: 'custom-swal'
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
+
+
 </html>
+
 <style>
-    .info-ite {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+
+    .custom-swal {
+        height: auto !important; /* Ensure the height is adjusted based on content */
+        max-height: 150px; /* Set the maximum height you want */
+        overflow-y: auto; /* Add scroll if content exceeds the max height */
+        padding: 20px; /* Adjust padding if necessary */
     }
 
-        .info-ite i {
-            font-size: 24px;
-           
-      
+        .custom-swal .swal2-title {
+            margin-bottom: 5px; /* Adjust title margin if necessary */
+        }
+
+        .custom-swal .swal2-content {
+            margin-bottom: 10px; /* Adjust content margin if necessary */
         }
 
     .info-ite {
@@ -89,22 +119,42 @@
         gap: 10px;
     }
 
-    
+        .info-ite i {
+            font-size: 24px;
+        }
+
+    .info-ite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
     .contact-section h2 {
         color: white;
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    .contact-info p  {
+    .contact-info p {
         color: white;
     }
 
-    .contact-info i{
+    .contact-info i {
         color: #FFD700;
     }
 
-    .hero-conte h1 {
+
+    .hero-sectio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .hero-conten h1 {
         margin: 10px 0 5px;
         font-size: 25px; /* Adjusted font size */
         font-weight: bold; /* Optional: make the text bold */
@@ -118,11 +168,28 @@
         font-weight: normal; /* Optional: make the text normal weight */
     }
 
-    .hero-conten p {
+    .hero-conte p {
         max-width: 600px;
-        margin: 20px auto;
+        margin: 28px auto;
         color: #FFFFFF;
+        margin-left: 0px;
+    }
+    .Screenshot-img {
+        position: relative;
+        top: 3rem;
+        width: 15vw;
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 50%;
+        border: 5px solid #fff;
     }
 
+        .Screenshot-img:hover {
+            box-shadow: 0 0 25px var(--main-color);
+            box-shadow: 0 0 50px var(--main-color);
+            box-shadow: 0 0 100px var(--main-color);
+        }
 
 </style>

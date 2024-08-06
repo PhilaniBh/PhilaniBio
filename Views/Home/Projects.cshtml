@@ -3,101 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhilaniBiography</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Projects Page</title>
+    <style>
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px; /* Adds space between the boxes */
+        }
+
+        .project-box {
+            width: 250px;
+            height: 240px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+            .project-box img {
+                width: 100%;
+                height: 53%;
+                object-fit: cover;
+            }
+
+        .project-title {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .project-buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 29px;
+            background-color: #fff;
+        }
+
+            .project-buttons a {
+                text-decoration: none;
+                color: black;
+                background-color: orange;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                .project-buttons a:hover {
+                    background-color: darkorange;
+                }
+    </style>
 </head>
 <body>
-    <section class="experience">
-        <h2>Explore My <strong>Experience</strong></h2>
-        <div class="experience-container">
-            <div class="experience-card">
-                <h3>Frontend Development</h3>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> HTML <span>Experienced</span></li>
-                    <li><i class="fas fa-check-circle"></i> CSS <span>Experienced</span></li>
-                    <li><i class="fas fa-check-circle"></i> DevExtreme <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> JavaScript <span>Basic</span></li>
-                    <li><i class="fas fa-check-circle"></i> TypeScript <span>Basic</span></li>
-                    <li><i class="fas fa-check-circle"></i> Material UI <span>Intermediate</span></li>
-                </ul>
-            </div>
-            <div class="experience-card">
-                <h3>Backend Development</h3>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> C++ <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> C# MVC <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> SQL Server <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> Node JS <span>Basic</span></li>
-                    <li><i class="fas fa-check-circle"></i> Express JS <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> Git <span>Intermediate</span></li>
-                    <li><i class="fas fa-check-circle"></i> API Development <span>Intermediate</span></li>
-                </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="projects-container">
+        <div class="project-box">
+            <div class="project-title">Bell B40E ADT</div>
+            <img src="~/img/project3.jpg" alt="">
+            <div class="project-buttons">
+                <a href="https://github.com/yourusername/pong_game" target="_blank">Github</a>
+                <a href="https://yourlivedemo.com/pong_game" target="_blank">Live Demo</a>
             </div>
         </div>
-    </section>
+
+        <div class="project-box">
+            <div class="project-title">Bell B40E ADT</div>
+            <img src="~/img/project4.png" alt="">
+            <div class="project-buttons">
+                <a href="https://github.com/yourusername/pong_game" target="_blank">Github</a>
+                <a href="https://yourlivedemo.com/pong_game" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-title">Bell B40E ADT</div>
+            <img src="~/img/project8.jpg" alt="">
+            <div class="project-buttons">
+                <a href="https://github.com/yourusername/pong_game" target="_blank">Github</a>
+                <a href="https://yourlivedemo.com/pong_game" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-title">Bell B40E ADT</div>
+            <img src="~/img/project9.jpg" alt="">
+            <div class="project-buttons">
+                <a href="https://github.com/yourusername/pong_game" target="_blank">Github</a>
+                <a href="https://yourlivedemo.com/pong_game" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-<script>
-
-
-        /* styles.css */
-    body {
-        font - family: Arial, sans - serif;
-        line - height: 1.6;
-        margin: 0;
-        padding: 0;
-    }
-
-    .experience {
-        text - align: center;
-        padding: 2em 0;
-    }
-
-    .experience h2 {
-        font - size: 2em;
-        margin - bottom: 1em;
-    }
-
-    .experience - container {
-        display: flex;
-        justify - content: center;
-        gap: 2em;
-    }
-
-    .experience - card {
-        background - color: #f9f9f9;
-        border - radius: 10px;
-        padding: 1em;
-        width: 300px;
-        box - shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .experience - card h3 {
-        margin - bottom: 1em;
-    }
-
-    .experience - card ul {
-        list - style: none;
-        padding: 0;
-    }
-
-    .experience - card li {
-        display: flex;
-        justify - content: space - between;
-        margin - bottom: 0.5em;
-        font - size: 1.1em;
-    }
-
-    .experience - card li i {
-        color: #4caf50;
-    }
-
-    .experience - card span {
-        font - size: 0.9em;
-        color: #666;
-    }
-
-</script>

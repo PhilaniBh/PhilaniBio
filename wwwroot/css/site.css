@@ -152,8 +152,9 @@ body {
 
 .hero-conten p {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 28px auto;
     color: #FFFFFF;
+    margin-left:0px;
 }
 
 .ratings i {

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,28 +8,45 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<br />
-<br />
-
 <body>
-    <section id="home" class="hero-section">
+    <div class="Screenshot" style="margin-left:-1%">
+        <img class="Screenshot-img" src="~/img/profile.png" alt="" />
+    </div>
+
+    <section id="home" class="hero-sectio" style="margin-left:35%; margin-top:-10%">
         <div class="hero-conten">
-            <div class="profile-pic">
-                <img class="profile-img" src="~/img/profile.png" alt="John Deo" />
+
+            <h1>Hi, it's Deelenta Pillay</h1>
+            <br />
+            <h2>I'm a Software Developer</h2>
+            <p>
+                I am a passionate software developer with project management experience, currently working as a Full Stack Software Developer. My expertise spans a range of technologies including C#, React, Node.js, HTML, and DevExpress for front-end development, as well as ASP.NET and MySQL for back-end development. I have also led projects, utilizing my skills to manage teams and ensure the successful delivery of high-quality software solutions. I thrive on solving complex problems and building efficient, scalable web applications.
+
+            </p>
+
+
+            <div class="slide" style="margin-left:-2%">
+                <a href="@Url.Action("ViewCV", "Home")" class="download-cv" style="margin-right: 20px;">Download CV</a>
+                <a href="/Home/Contacts" class="next">Contacts</a>
             </div>
-            <h1>Deelenta Pillay</h1>
-            <h2>Developer</h2>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Deserunt Totam Eveniet Explicabo Sit Consequuntur Veniam Esse Assumenda Rem At Officia.</p>
-            <div class="ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="slider">
-                <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="next"><i class="fas fa-chevron-right"></i></button>
+
+
+            <div class="social-icons" style="margin-left:35%; margin-top:-8%">
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com/yourusername" target="_blank" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/PhilaniBh" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/philani-bhixi-62818617a" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -38,9 +56,101 @@
 </html>
 
 <style>
+    .download-cv {
+        display: inline-block;
+        background-color: #268bd2;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 26px 0;
+    }
 
-  
+    .download-cv:hover {
+        background-color: #0056b3; /* Change background color on hover */
+
+        color: #FFFFFF;
+    }
+   
+
+    .hero-conten h1 {
+        margin-left: -8%;
+    }
+
+    .Screenshot-img {
+        position: relative;
+        top: 3rem;
+        width: 15vw;
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 50%;
+        border: 5px solid #fff;
+    }
+
+        .Screenshot-img:hover {
+            box-shadow: 0 0 25px var(--main-color);
+            box-shadow: 0 0 50px var(--main-color);
+            box-shadow: 0 0 100px var(--main-color);
+        }
 
 
+    .next {
+        display: inline-block;
+        background-color: #268bd2;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+        .next:hover {
+            background-color: #0056b3; /* Change background color on hover */
+
+            color: #FFFFFF;
+        }
+
+
+    .slide button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .View-cv {
+        display: inline-block;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+        .View-cv img {
+            width: 40px; /* Adjust size as needed */
+            height: 45px;
+            cursor: pointer;
+            position: relative;
+        }
+
+    .social-icons {
+        display: flex;
+      
+        align-items: center;
+    }
+
+    .social-icon {
+        text-decoration: none;
+        font-size: 15px; /* Increase icon size here */
+    }
+
+        .social-icon:hover {
+            color: #007bff; /* Adjust hover color as needed */
+        }
 
 </style>

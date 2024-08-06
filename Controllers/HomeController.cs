@@ -50,6 +50,12 @@ namespace PhilaniBiography.Controllers
             return View();
         }
 
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Submit(ContactForm model)
         {
@@ -64,20 +70,23 @@ namespace PhilaniBiography.Controllers
             Mail m = new Mail(Configuration, _logger);
 
             List<string> recipients = new List<string>
-            {
+                {
                 "philaniprnc@gmail.com"
-            };
+                };
 
+            bool emailSent = true;
             foreach (var recipient in recipients)
             {
                 bool result = m.SendAdminSupportRequestMail(recipient, model);
                 if (!result)
                 {
+                    emailSent = false;
                     break;
                 }
             }
 
-            return View("Index", model);
+            ViewBag.EmailSent = emailSent;
+            return View("Contacts", model);
         }
 
 
@@ -107,5 +116,26 @@ namespace PhilaniBiography.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+     
+        public async Task<IActionResult> LoginPage(LoginDetails model)
+        {
+          
+            await Task.Delay(1000);
+
+            ViewBag.Username = model.Username;
+            return View("Index", model);
+        }
+
+
+     
+
+
+        public IActionResult LogoutPage()
+        {
+            return View();
+        }
+
+
     }
 }
